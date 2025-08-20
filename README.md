@@ -1,5 +1,4 @@
-# ========= Line by Line Guide<img width="1811" height="6433" alt="null" src="https://github.com/user-attachments/assets/f1be59f2-bd31-4b73-b486-6e99bfa35ec1" />
- =========
+# ========= Line by Line Guide =========
 
 ## Step 1: Update & Install Dependencies
 ```bash
