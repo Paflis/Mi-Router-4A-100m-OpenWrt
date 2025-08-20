@@ -44,4 +44,4 @@ uci commit network
 /etc/init.d/network restart
 ```
 
-
+<img width="1811" height="6433" alt="null" src="https://github.com/user-attachments/assets/1ec27738-164c-4a05-9459-86f194fd6ca1" />
