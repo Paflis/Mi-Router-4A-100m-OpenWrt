@@ -1,4 +1,4 @@
-# ========= Useful Links =========
+# Useful Links
 
 Big thumbs up for the help and the guidance
 
