@@ -116,5 +116,6 @@ uci commit network
 ### Restart the networking service to apply changes
 ```bash
 /etc/init.d/network restart
+```
 
 <img width="1811" height="6433" alt="null" src="https://github.com/user-attachments/assets/2feaea4f-4c58-45ea-ba2d-f5d6211aff76" />
