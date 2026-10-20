@@ -23,7 +23,7 @@ sudo apt install git python3 python3-pip python3-venv python3-full -y
 
 ### Clone the OpenWRTInvasion repository
 ```bash
-git clone [https://github.com/acecilia/OpenWRTInvasion.git](https://github.com/acecilia/OpenWRTInvasion.git)
+git clone https://github.com/acecilia/OpenWRTInvasion.git
 ```
 
 ### Enter the repository directory, create a virtual environment, and install Python requirements
