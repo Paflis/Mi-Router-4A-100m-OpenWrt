@@ -23,7 +23,7 @@ sudo apt install git python3 python3-pip python3-venv python3-full -y
 
 ### Clone the OpenWRTInvasion repository
 ```bash
-git clone https://github.com/acecilia/OpenWRTInvasion.git
+git clone [https://github.com/acecilia/OpenWRTInvasion.git](https://github.com/acecilia/OpenWRTInvasion.git)
 ```
 
 ### Enter the repository directory, create a virtual environment, and install Python requirements
@@ -48,38 +48,24 @@ python3 remote_command_execution_vulnerability.py
 192.168.31.1
 ```
 
-### Set a new temporary root password
+### Enter your router admin login password
 ```bash
-newpassword
+mypassword
 ```
 
-### Select exploit mode option
+### Select exploit mode option 1 or 2 (preferable)
 ```bash
 2
 ```
 
----
-
-## Step 4: Connect via Telnet
-
-### Open a Telnet session to the router
+### Transfer the firmware image to the router's /tmp directory via WinSCP and rename it to openwrt.bin
 ```bash
-telnet 192.168.31.1
-```
-
-### Enter login username
-```bash
-root
-```
-
-### Enter password created in Step 3
-```bash
-root
+openwrt-25.12.6-ramips-mt7621-xiaomi_mi-router-4a-gigabit-squashfs-sysupgrade.bin
 ```
 
 ---
 
-## Step 5: Flash Firmware
+## Step 4: Flash Firmware
 
 ### Navigate to the temporary RAM directory
 ```bash
@@ -93,12 +79,10 @@ ls -la
 
 ### Erase the OS1 partition, write the custom firmware binary, and reboot
 ```bash
-mtd -e OS1 -r write openfirm.bin OS1
+mtd -e OS1 -r write openwrt.bin OS1
 ```
 
----
-
-## Step 6: Configure Network via SSH
+## Step 5: Configure Network via SSH
 
 ### Establish an SSH connection to the newly flashed OpenWrt router
 ```bash
